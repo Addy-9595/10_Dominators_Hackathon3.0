@@ -4,10 +4,6 @@
     box-sizing: border-box;
 }
 
-*:focus{
-    outline: none;
-}
-
 body{
     position: relative;
     width: 100%;
@@ -16,42 +12,42 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    background: url('../img/bg.png');
+    background: url(../Hackathon3.0/bg.png);
     background-size: cover;
     background-position: center;
     font-family: 'roboto', sans-serif;
 }
 
-.form{
-    width: 400px;
-    height: auto;
-    color: #fff;
-    font-family: 'roboto', sans-serif;
+.container{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    border: 5px solid #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.heading{
-    opacity: 0;
+.logout{
+    position: absolute;
+    top: 10px;
+    right: 0;
+    padding: 10px 20px;
     text-transform: capitalize;
-    text-align: center;
-    font-size: 80px;
-    font-weight: 300;
-    margin-bottom: 50px;
-}
-
-input,
-.submit-btn{
-    opacity: 0;
-    width: 80%;
-    height: 35px;
-    display: block;
-    margin: 20px auto;
-    border-radius: 5px;
-    background: rgba(255, 255, 255, 0.3);
+    font-size: 16px;
+    color: #fff;
+    background: none;
+    text-decoration: underline;
+    cursor: pointer;
+    outline: none;
     border: none;
-    color: #fff;
-    padding: 15px;
-    transition: .5s;
-    text-transform: capitalize;
 }
 
+.greeting{
+    font-family: 'dosis';
+    font-size: 100px;
+    color: #fff;
+    font-weight: 800;
+    text-transform: capitalize;
+}
 
